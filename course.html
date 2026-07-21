@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Courses - Excillence College</title>
+
+  <style>
+
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:Arial, sans-serif;
+    }
+
+    body{
+
+      background:
+      linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
+      url("https://images.unsplash.com/photo-1562774053-701939374585");
+
+      background-size:cover;
+      background-position:center;
+      background-attachment:fixed;
+    }
+
+    nav{
+      background:rgba(0,0,0,0.5);
+      padding:20px 60px;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+    }
+
+    nav h1{
+      color:#ffd700;
+      font-size:40px;
+    }
+
+    nav ul{
+      display:flex;
+      list-style:none;
+      gap:30px;
+    }
+
+    nav ul li a{
+      color:white;
+      text-decoration:none;
+      font-size:20px;
+    }
+
+    nav ul li a:hover{
+      color:#ffd700;
+    }
+
+    .title{
+      text-align:center;
+      padding:60px 20px 20px;
+    }
+
+    .title h2{
+      font-size:55px;
+      color:white;
+      margin-bottom:10px;
+    }
+
+    .title p{
+      color:#ddd;
+      font-size:20px;
+    }
+
+    .course-container{
+      width:90%;
+      margin:auto;
+      padding:50px 0;
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+      gap:30px;
+    }
+
+    .course-card{
+      background:rgba(255,255,255,0.95);
+      border-radius:15px;
+      overflow:hidden;
+      box-shadow:0 5px 15px rgba(0,0,0,0.2);
+      transition:0.3s;
+    }
+
+    .course-card:hover{
+      transform:translateY(-10px);
+    }
+
+    .course-card img{
+      width:100%;
+      height:220px;
+      object-fit:cover;
+    }
+
+    .course-content{
+      padding:25px;
+    }
+
+    .course-content h3{
+      color:#0b1d3a;
+      margin-bottom:15px;
+      font-size:30px;
+    }
+
+    .course-content p{
+      color:#555;
+      line-height:1.7;
+      margin-bottom:20px;
+    }
+
+    .btn{
+      padding:12px 22px;
+      border:none;
+      background:#ffd700;
+      font-size:18px;
+      border-radius:5px;
+      cursor:pointer;
+    }
+
+    .btn:hover{
+      background:#0b1d3a;
+      color:white;
+    }
+
+  </style>
+</head>
+<body>
+
+  <nav>
+
+    <h1>Excillence College</h1>
+
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="course.html">Courses</a></li>
+      <li><a href="admission.html">Admissions</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+
+  </nav>
+
+  <div class="title">
+
+    <h2>Our Courses</h2>
+
+    <p>Choose the best career path for your future</p>
+
+  </div>
+
+  <div class="course-container">
+
+    <div class="course-card">
+
+      <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=1000">
+
+      <div class="course-content">
+
+        <h3>BSc IT</h3>
+
+        <p>
+          Learn Programming, Networking, Cyber Security,
+          Web Development and Databases.
+        </p>
+
+        <button class="btn"><a href="course_bscit.html">Learn More</a></button>
+
+      </div>
+
+    </div>
+
+    <div class="course-card">
+
+      <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=1000">
+
+      <div class="course-content">
+
+        <h3>BCA</h3>
+
+        <p>
+          Gain practical skills in software engineering,
+          app development and computer applications.
+        </p>
+
+        <button class="btn"><a href="course_bca.html">Learn More</a></button>
+
+      </div>
+
+    </div>
+
+    <div class="course-card">
+
+      <img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?w=1000">
+
+      <div class="course-content">
+
+        <h3>MSc IT</h3>
+
+        <p>
+          Advanced learning in AI, Cloud Computing,
+          Data Science and Cyber Security.
+        </p>
+
+        <button class="btn"><a href="course_mscit.html">Learn More</a></button>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</body>
+</html>
