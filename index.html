@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Excillence College</title>
+
+  <style>
+
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:Arial, sans-serif;
+    }
+
+    body{
+      color:white;
+    }
+
+    .home{
+      height:100vh;
+
+      background:
+      linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+      url("https://images.unsplash.com/photo-1562774053-701939374585");
+
+      background-size:cover;
+      background-position:center;
+      background-repeat:no-repeat;
+    }
+
+    nav{
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      padding:20px 60px;
+      background:rgba(0,0,0,0.4);
+    }
+
+    nav h1{
+      color:#ffd700;
+      font-size:45px;
+    }
+
+    nav ul{
+      display:flex;
+      list-style:none;
+      gap:30px;
+    }
+
+    nav ul li a{
+      color:white;
+      text-decoration:none;
+      font-size:22px;
+      transition:0.3s;
+    }
+
+    nav ul li a:hover{
+      color:#ffd700;
+    }
+
+    .content{
+      height:85vh;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      text-align:center;
+      padding:20px;
+    }
+
+    .content h2{
+      font-size:80px;
+      margin-bottom:20px;
+    }
+
+    .content p{
+      font-size:30px;
+      margin-bottom:30px;
+      line-height:1.5;
+    }
+
+    .btn{
+      padding:15px 35px;
+      background:#ffd700;
+      border:none;
+      border-radius:8px;
+      font-size:22px;
+      cursor:pointer;
+      transition:0.3s;
+    }
+
+    .btn:hover{
+      background:white;
+      transform:scale(1.05);
+    }
+
+    @media(max-width:768px){
+
+      nav{
+        flex-direction:column;
+        gap:15px;
+      }
+
+      nav ul{
+        flex-direction:column;
+        text-align:center;
+      }
+
+      .content h2{
+        font-size:45px;
+      }
+
+      .content p{
+        font-size:20px;
+      }
+
+    }
+
+  </style>
+</head>
+<body>
+
+  <section class="home">
+
+    <nav>
+
+      <h1>Excillence College</h1>
+
+      <ul>
+        <li><a href="Home.html">Home</a></li>
+        <li><a href="course.html">Courses</a></li>
+        <li><a href="admission.html">Admissions</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+
+    </nav>
+
+    <div class="content">
+
+      <div>
+
+        <h2>Welcome to Excillence College</h2>
+
+        <p>
+          Providing quality education and building the future leaders
+          of tomorrow through innovation and excellence.
+        </p>
+
+        <button class="btn" onclick="message()">
+          Apply Now
+        </button>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <script>
+
+    function message(){
+
+      alert("Admissions Open for 2026!");
+
+    }
+
+  </script>
+
+</body>
+</html>

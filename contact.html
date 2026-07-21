@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact - Excillence College</title>
+
+  <style>
+
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:Arial;
+    }
+
+    body{
+
+      background:
+      linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
+      url("https://images.unsplash.com/photo-1562774053-701939374585");
+
+      background-size:cover;
+      background-position:center;
+      background-attachment:fixed;
+    }
+
+    nav{
+      background:rgba(0,0,0,0.5);
+      padding:20px 60px;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+    }
+
+    nav h1{
+      color:#ffd700;
+      font-size:40px;
+    }
+
+    nav ul{
+      display:flex;
+      list-style:none;
+      gap:30px;
+    }
+
+    nav ul li a{
+      color:white;
+      text-decoration:none;
+      font-size:20px;
+    }
+
+    nav ul li a:hover{
+      color:#ffd700;
+    }
+
+    .contact-section{
+      width:90%;
+      margin:auto;
+      padding:60px 0;
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:40px;
+      align-items:center;
+    }
+
+    .left h2{
+      font-size:60px;
+      color:white;
+      margin-bottom:20px;
+    }
+
+    .left p{
+      color:#eee;
+      line-height:1.8;
+      margin-bottom:20px;
+      font-size:20px;
+    }
+
+    .info{
+      margin-bottom:15px;
+      font-size:20px;
+      color:white;
+    }
+
+    .right{
+      background:rgba(255,255,255,0.95);
+      padding:40px;
+      border-radius:15px;
+      box-shadow:0 5px 15px rgba(0,0,0,0.2);
+    }
+
+    input,
+    textarea{
+      width:100%;
+      padding:14px;
+      margin-bottom:20px;
+      border:1px solid #ccc;
+      border-radius:8px;
+      font-size:16px;
+    }
+
+    button{
+      width:100%;
+      padding:14px;
+      border:none;
+      background:#ffd700;
+      font-size:20px;
+      border-radius:8px;
+      cursor:pointer;
+    }
+
+    button:hover{
+      background:#0b1d3a;
+      color:white;
+    }
+
+    @media(max-width:900px){
+
+      .contact-section{
+        grid-template-columns:1fr;
+      }
+
+    }
+
+  </style>
+</head>
+<body>
+
+  <nav>
+
+    <h1>Excillence College</h1>
+
+    <ul>
+      <li><a href="Home.html">Home</a></li>
+      <li><a href="course.html">Courses</a></li>
+      <li><a href="admission.html">Admissions</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+
+  </nav>
+
+  <div class="contact-section">
+
+    <div class="left">
+
+      <h2>Contact Us</h2>
+
+      <p>
+        Have questions about courses or admissions?
+        Reach out to us anytime.
+      </p>
+
+      <div class="info">📍 Mumbai, India</div>
+
+      <div class="info">📞 +91 9876543210</div>
+
+      <div class="info">📧 excillencecollege@gmail.com</div>
+
+    </div>
+
+    <div class="right">
+
+      <form id="contactForm">
+
+        <input type="text" placeholder="Your Name" required>
+
+        <input type="email" placeholder="Your Email" required>
+
+        <textarea rows="6" placeholder="Your Message"></textarea>
+
+        <button type="submit">
+          Send Message
+        </button>
+
+      </form>
+
+    </div>
+
+  </div>
+
+  <script>
+
+    document.getElementById("contactForm")
+    .addEventListener("submit", function(e){
+
+      e.preventDefault();
+
+      alert("Message Sent Successfully!");
+
+    });
+
+  </script>
+
+</body>
+</html>
